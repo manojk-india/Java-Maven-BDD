@@ -16,7 +16,7 @@ public class Products {
         if (RestAssured.baseURI == null) {
             throw new IllegalStateException("FLASK_API_URL environment variable not set");
         }*/
-        RestAssured.baseURI ="http://127.0.0.1:5000";
+        RestAssured.baseURI="http://host.docker.internal:5000";
     }
 
     @When("I send a POST request to the {string} endpoint with the body {string}")
